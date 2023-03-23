@@ -1,21 +1,21 @@
 # SSH to GitHub Actions
 
-This GitHub Action offers you connect to GitHub Actions VM via SSH for interactive debugging
+This GitHub Action offers you connect to GitHub Actions VM via SSH for interactive debugging（这个 Action 让你通过 SSH 连接到 GitHub Actions虚拟机进行交互式调试）
 
 ## Features
 
-- Support Ubuntu and macOS
-- Provides two optional SSH connection methods, tmate and ngrok
-- Proceed to the next step to stay connected
-- Send SSH connection info to Telegram
+- Support Ubuntu and macOS（支持 Ubuntu 和 macOS）
+- Provides two optional SSH connection methods, tmate and ngrok（提供 tmate 和 ngrok 两种可选 SSH 连接方式）
+- Proceed to the next step to stay connected（继续下一步以保持连接）
+- Send SSH connection info to Telegram（将 SSH 连接信息发送到 Telegram）
 
 ## Usage
 
-### Connect to Github Actions VM via SSH by using [tmate](https://tmate.io)
+### Connect to Github Actions VM via SSH by using（使用 SSH 连接到 Github Actions虚拟机） [tmate](https://tmate.io)
 
 ```yaml
 - name: Start SSH via tmate
-  uses: P3TERX/ssh2actions@main
+  uses: Virgodata/sshToActions@main
   # Send connection info to Telegram (optional)
   # You can find related documents here: https://core.telegram.org/bots
   env:
@@ -23,11 +23,11 @@ This GitHub Action offers you connect to GitHub Actions VM via SSH for interacti
     TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
 ```
 
-### Connect to Github Actions VM via SSH by using [ngrok](https://ngrok.com)
+### Connect to Github Actions VM via SSH by using（使用 SSH 连接到 Github Actions虚拟机） [ngrok](https://ngrok.com)
 
 ```yaml
 - name: Start SSH via ngrok
-  uses: P3TERX/ssh2actions@main
+  uses: Virgodata/sshToActions@main
   with:
     mode: ngrok
   env:
