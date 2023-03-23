@@ -19,8 +19,8 @@ This GitHub Action offers you connect to GitHub Actions VM via SSH for interacti
   # Send connection info to Telegram (optional)
   # You can find related documents here: https://core.telegram.org/bots
   env:
-    TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
     TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+    TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
 ```
 
 ### Connect to Github Actions VM via SSH by using（使用 SSH 连接到 Github Actions虚拟机） [ngrok](https://ngrok.com)
@@ -44,8 +44,8 @@ This GitHub Action offers you connect to GitHub Actions VM via SSH for interacti
 
     # Send connection info to Telegram (optional)
     # You can find related documents here: https://core.telegram.org/bots
-    TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
     TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+    TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
 ```
 
 ## Lisence
